@@ -36,7 +36,8 @@ model Task{
 // los cambios necesarios para ajustar la base de datos al esquema actual.
 // - En resumen, npx prisma migrate dev --name init es un comando para generar y aplicar 
 // una migración inicial basada en tu esquema Prisma durante el desarrollo, 
-// ermitiendo que tu base de datos refleje el estado definido en schema.prisma.
+// permitiendo que tu base de datos refleje el estado definido en schema.prisma.
+// - Desplegamos la base de datos en el hosting
 
 // LUEGO:
 
@@ -44,7 +45,7 @@ model Task{
 // - npx prisma generate genera el cliente Prisma a partir de tu esquema definido en schema.prisma, 
 // permitiéndote interactuar de manera tipada y segura con tu base de datos desde tu código JavaScript o TypeScript.
 
-// LUEGO
+// LUEGO:
 
 // npm i vercel -g Instalamos vercel
 // Primero nos loggeamos con 'vercel login'
