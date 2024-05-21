@@ -1,5 +1,5 @@
 
-A simple project for practicing Next.js, Prisma ORM and PostgreSQL
+<h1>A simple project for practicing Next.js, Prisma ORM and PostgreSQL</h1>
 
 ## Getting Started
 
