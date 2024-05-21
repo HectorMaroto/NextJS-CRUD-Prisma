@@ -30,5 +30,4 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deployed on Vercel
-
-```https://nextjs-prisma-crud-hectormaroto-hector-marotos-projects.vercel.app/```
+https://nextjs-prisma-crud-hectormaroto-hector-marotos-projects.vercel.app/
