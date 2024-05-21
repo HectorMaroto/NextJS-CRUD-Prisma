@@ -8,6 +8,8 @@ First, run the development server:
 > [!NOTE]
 > Run the app:
 > ```npm run dev```
+> Visualize the Database:
+> ```npx prisma studio```
 
 
 ## Latest Deployment on Vercel
