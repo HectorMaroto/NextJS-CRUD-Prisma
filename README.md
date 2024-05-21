@@ -11,8 +11,6 @@ First, run the development server:
 > ```npm run dev```
 > <br>
 > <br>
-> <br>
-> <br>
 > Visualize the Database:
 > <br>
 > ```npx prisma studio```
