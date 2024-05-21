@@ -6,7 +6,8 @@ A simple project for practicing Next.js, Prisma ORM and PostgreSQL
 First, run the development server:
 
 > [!NOTE]
-> Run the app: npm run dev
+> Run the app:
+> ```npm run dev```
 
 
 ## Latest Deployment on Vercel
