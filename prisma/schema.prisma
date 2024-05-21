@@ -1,0 +1,51 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Base de datos con la que nos comunicamos
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+// Definimos el modelo de la entidad Task para ser insertado en BBDD
+model Task{
+  id Int @id @default(autoincrement())
+  title String
+  description String?
+  createdAt DateTime @default(now())
+}
+
+// npx prisma init --datasource-provider sqlite -> inicializar el proyecto con prisma con sqlite como base de datos
+
+// SQLite solo ha sido para desarollo, para deploy sustituimos la BBDD por PostgreSQL
+// Por lo que hemos borrado todo el interior de la carpeta /prisma, excepto 'schema.prisma'
+
+// LUEGO:
+
+// npx prisma migrate dev --name init 
+// Con este comando hacemos que:
+// - La BBDD sea accesible desde codigo.
+// - Crea archivos que contienen el codigo SQL que vamos ejecutando (como la creacion de las tablas)
+// - Prisma lee el esquema definido en 'schema.prisma'
+// - Genera un conjunto de archivos de migración SQL que representan 
+// los cambios necesarios para ajustar la base de datos al esquema actual.
+// - En resumen, npx prisma migrate dev --name init es un comando para generar y aplicar 
+// una migración inicial basada en tu esquema Prisma durante el desarrollo, 
+// ermitiendo que tu base de datos refleje el estado definido en schema.prisma.
+
+// LUEGO:
+
+// npx prisma generate -> para crear el PrismaClient
+// - npx prisma generate genera el cliente Prisma a partir de tu esquema definido en schema.prisma, 
+// permitiéndote interactuar de manera tipada y segura con tu base de datos desde tu código JavaScript o TypeScript.
+
+// LUEGO
+
+// npm i vercel -g Instalamos vercel
+// Primero nos loggeamos con 'vercel login'
+// Comando 'vercel' para desplegar la app con los nuevos cambios
