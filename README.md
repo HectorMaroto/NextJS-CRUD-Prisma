@@ -5,7 +5,6 @@ A simple project for practicing Next.js, Prisma ORM and PostgreSQL
 
 First, run the development server:
 
-```bash
 npm run dev
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
