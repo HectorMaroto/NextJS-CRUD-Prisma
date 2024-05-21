@@ -7,9 +7,11 @@ First, run the development server:
 
 > [!NOTE]
 > Run the app:
+> <br>
 > ```npm run dev```
 > <br>
 > Visualize the Database:
+> <br>
 > ```npx prisma studio```
 
 
