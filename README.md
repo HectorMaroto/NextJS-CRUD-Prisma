@@ -15,6 +15,4 @@ First, run the development server:
 > <br>
 > ```npx prisma studio```
 
-
-## Latest Deployment on Vercel
-https://nextjs-prisma-crud-hectormaroto-hector-marotos-projects.vercel.app/
+<hr>
