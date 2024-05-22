@@ -10,7 +10,6 @@ export async function GET(request, { params }) {
             id: Number(params.id)
         }
     })
-    console.log(task);
 
     return NextResponse.json(task);
 }

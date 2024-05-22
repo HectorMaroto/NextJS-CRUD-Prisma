@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 function NewPage({ params }) {
 
+  console.log(params);
   console.log(params.id)
 
   const router = useRouter();
